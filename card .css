@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.card-header {
+    position: relative;
+    width: 100%;
+}
+
+.wave-container {
+    position: relative;
+    background: #3498db;
+    color: white;
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+.wave-container::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; 
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%232c3e50" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,202.7C640,224,800,256,960,245.3C1120,235,1280,181,1360,154.7L1440,128V320H0Z"></path></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-image {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+
+.card-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    image-rendering: -webkit-optimize-contrast;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 50px 20px 20px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-content p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.card-contact p {
+    margin: 5px 0;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.flex-div p {
+    margin: 0;
+    color: #555;
+}
+
+.card-footer {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.card-footer p {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.card-footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
